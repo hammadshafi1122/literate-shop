@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Signin, Signup, Homepage } from "pages";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "swiper/css";
 
 const App = () => {
   return (
@@ -20,6 +23,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
+      <ToastContainer />
     </Router>
   );
 };

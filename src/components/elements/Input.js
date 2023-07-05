@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
-const Input = ({ label, onChange, placeholder, type, className }) => {
+const Input = ({ label, onChange, placeholder, type, className, value }) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);
 
   return (
@@ -28,6 +28,7 @@ const Input = ({ label, onChange, placeholder, type, className }) => {
       </div>
 
       <input
+        value={value}
         onChange={onChange}
         type={isPasswordVisible ? "text" : type}
         placeholder={placeholder}

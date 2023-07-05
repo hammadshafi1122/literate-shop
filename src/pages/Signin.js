@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Header, Input } from "components";
 import { SigninBanner } from "assets/images";
 import { FcGoogle } from "react-icons/fc";
 import { BsTwitter } from "react-icons/bs";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Signin = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onSubmit = () => {
+    if (!email || !password) {
+      toast.error("Fill the fields");
+      return;
+    }
+    if (email === "hammad@gmail.com" && password === "12345") {
+      toast.success("Login Successfully");
+      localStorage.setItem("userLoggedIn", true);
+      navigate("/");
+    } else {
+      toast.error("Invalid Credientials");
+    }
+  };
+
   return (
     <>
       <Header />
@@ -37,18 +57,20 @@ const Signin = () => {
             <Input
               label={"Email address"}
               placeholder={""}
-              onChange={(e) => console.log(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
+              value={email}
             />
             <Input
               label={"Password"}
               placeholder={""}
-              onChange={(e) => console.log(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               type="password"
+              value={password}
             />
           </div>
           <div className="space-y-2">
-            <Button title="Signin" className={"py-4 px-16"} />
+            <Button title="Signin" className={"py-4 px-16"} onClick={onSubmit} />
             <p className="font-light">
               Does not have a account?{" "}
               <span>
