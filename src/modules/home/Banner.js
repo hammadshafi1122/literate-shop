@@ -1,8 +1,11 @@
 import React from "react";
+import { HomeBanner } from "assets/images";
 
 const Banner = () => {
   return (
-    <div className="h-[716px] w-full bg-green-200 flex justify-center items-center">Banner</div>
+    <div className="h-[716px] w-full flex justify-center items-center">
+      <img src={HomeBanner} alt="banner" className="w-full" />
+    </div>
   );
 };
 
