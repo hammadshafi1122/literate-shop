@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Button } from "components";
+
 const bannerSlides = [
   {
     id: 1,
@@ -25,7 +26,7 @@ const bannerSlides = [
 
 const Banner = () => {
   return (
-    <div className="h-[716px] w-full flex justify-center items-center relative">
+    <div className="h-[350px] md:h-[716px] w-full flex justify-center items-center relative">
       <div className="swiper-button image-swiper-button-next">
         <BsChevronRight fontSize="2rem" className="text-white" />
       </div>
@@ -48,7 +49,7 @@ const Banner = () => {
         {bannerSlides.map((item) => (
           <SwiperSlide key={item.id}>
             <div
-              className="px-8 py-16 space-y-8 w-full h-[300px] md:h-[716px] text-white"
+              className="px-8 py-16 space-y-8 w-full h-[350px] md:h-[716px] text-white"
               style={{
                 backgroundImage: `url(${item.image})`,
                 backgroundRepeat: "no-repeat",

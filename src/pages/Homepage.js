@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Header } from "components";
+import { Footer, Header } from "components";
 import { useNavigate } from "react-router-dom";
 import {
   Banner,
@@ -41,6 +41,7 @@ const Homepage = () => {
           <LimeLights />
           <Feedback />
         </div>
+        <Footer />
       </div>
     </>
   );
