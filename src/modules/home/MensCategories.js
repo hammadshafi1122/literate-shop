@@ -1,4 +1,4 @@
-import { Men1 } from "assets/images";
+import { Men1, Men2, Men3, Men4, Men5, Men6, Men8, Men7 } from "assets/images";
 import { ProductCard } from "components";
 import React from "react";
 
@@ -10,37 +10,37 @@ const mensCollection = [
   },
   {
     id: 2,
-    image: Men1,
+    image: Men2,
     title: "Printed",
   },
   {
     id: 3,
-    image: Men1,
+    image: Men3,
     title: "Active T-Shirts",
   },
   {
     id: 4,
-    image: Men1,
+    image: Men4,
     title: "Urban Shirts",
   },
   {
     id: 5,
-    image: Men1,
+    image: Men5,
     title: "Knitted Joggers",
   },
   {
     id: 6,
-    image: Men1,
+    image: Men6,
     title: "Full Sleeves",
   },
   {
     id: 7,
-    image: Men1,
+    image: Men7,
     title: "Active T-Shirts",
   },
   {
     id: 8,
-    image: Men1,
+    image: Men8,
     title: "Urban Shirts",
   },
 ];

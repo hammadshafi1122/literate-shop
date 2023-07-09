@@ -9,6 +9,17 @@ import NewArrival2 from "./new_arrival_2.png";
 import NewArrival3 from "./new_arrival_3.png";
 import NewArrival4 from "./new_arrival_4.png";
 import Men1 from "./men1.png";
+import Men2 from "./Men2.png";
+import Men3 from "./Men3.png";
+import Men4 from "./Men4.png";
+import Men5 from "./Men5.png";
+import Men6 from "./Men6.png";
+import Men7 from "./Men7.png";
+import Men8 from "./Men8.png";
+import Women1 from "./Women1.png";
+import Women2 from "./Women2.png";
+import Women3 from "./Women3.png";
+import Women4 from "./Women4.png";
 
 export {
   Logo,
@@ -22,4 +33,15 @@ export {
   NewArrival3,
   NewArrival4,
   Men1,
+  Men2,
+  Men3,
+  Men4,
+  Men5,
+  Men6,
+  Men7,
+  Men8,
+  Women1,
+  Women2,
+  Women3,
+  Women4,
 };
