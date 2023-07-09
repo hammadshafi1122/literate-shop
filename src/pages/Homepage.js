@@ -30,7 +30,7 @@ const Homepage = () => {
       <Header />
       <div className="space-y-10">
         <Banner />
-        <div className="space-y-10 px-16">
+        <div className="space-y-10 px-6 md:px-16">
           <DiscountBanners />
           <NewArrival />
           <BigSavingZone />
