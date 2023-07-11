@@ -52,7 +52,7 @@ const MensCateogories = () => {
         <div className="h-6 w-1 bg-purple-600 rounded-full"></div>
         <h1 className="font-bold text-3xl">Mens Categories</h1>
       </div>
-      <div className="pt-12 px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="pt-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {mensCollection.map((item) => (
           <ProductCard key={item.id} image={item.image} title={item.title} />
         ))}

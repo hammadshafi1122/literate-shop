@@ -21,6 +21,10 @@ import Women2 from "./Women2.png";
 import Women3 from "./Women3.png";
 import Women4 from "./Women4.png";
 
+import Brand1 from "./brand1.png";
+import ShopNowLeftSide from "./shop_now_left_side.png";
+import ShopNowRightSide from "./shop_now_right_side.png";
+
 export {
   Logo,
   SigninBanner,
@@ -44,4 +48,7 @@ export {
   Women2,
   Women3,
   Women4,
+  Brand1,
+  ShopNowLeftSide,
+  ShopNowRightSide,
 };

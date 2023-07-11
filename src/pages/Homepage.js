@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Header } from "components";
+import { Footer, Header } from "components";
 import { useNavigate } from "react-router-dom";
 import {
   Banner,
@@ -30,7 +30,7 @@ const Homepage = () => {
       <Header />
       <div className="space-y-10">
         <Banner />
-        <div className="space-y-10 px-16">
+        <div className="space-y-10 px-6 md:px-16">
           <DiscountBanners />
           <NewArrival />
           <BigSavingZone />
@@ -41,6 +41,7 @@ const Homepage = () => {
           <LimeLights />
           <Feedback />
         </div>
+        <Footer />
       </div>
     </>
   );
