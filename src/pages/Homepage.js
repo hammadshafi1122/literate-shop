@@ -27,7 +27,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Header />
+      <Header userLoggedIn={true} />
       <div className="space-y-10">
         <Banner />
         <div className="space-y-10 px-6 md:px-16">
