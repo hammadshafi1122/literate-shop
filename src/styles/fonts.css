@@ -1,0 +1,52 @@
+/* Adding Causten Family Versions */
+@font-face {
+  font-family: "causten-bold";
+  src: local("causten-bold"), url("./../assets/fonts/causten/Causten-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "causten-semibold";
+  src: local("causten-semibold"),
+    url("./../assets/fonts/causten/Causten-SemiBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "causten-medium";
+  src: local("causten-medium"),
+    url("./../assets/fonts/causten/Causten-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "causten-regular";
+  src: local("causten-regular"),
+    url("./../assets/fonts/causten/Causten-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "causten-light";
+  src: local("causten-light"), url("./../assets/fonts/causten/Causten-Light.otf") format("truetype");
+}
+
+/* Adding Core Sans C Family Versions */
+
+@font-face {
+  font-family: "core-sans-c-bold";
+  src: local("core-sans-c-bold"),
+    url("./../assets/fonts/core-sans-c/core-sans-bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "core-sans-c-semibold";
+  src: local("core-sans-c-semibold"),
+    url("./../assets/fonts/core-sans-c/core-sans-semibold.otf") format("truetype");
+}
+@font-face {
+  font-family: "core-sans-c-medium";
+  src: local("core-sans-c-medium"),
+    url("./../assets/fonts/core-sans-c/core-sans-medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "core-sans-c-regular";
+  src: local("core-sans-c-regular"),
+    url("./../assets/fonts/core-sans-c/core-sans-regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "core-sans-c-light";
+  src: local("core-sans-c-light"),
+    url("./../assets/fonts/core-sans-c/core-sans-light.otf") format("truetype");
+}

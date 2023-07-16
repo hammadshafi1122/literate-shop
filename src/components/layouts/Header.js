@@ -23,14 +23,12 @@ const Header = ({ userLoggedIn }) => {
           <div className="">
             <div className="flex justify-between">
               <img alt="my_image" src={Logo} className="h-10 md:hidden" />
-
               <AiOutlineMenu
                 className="block md:hidden text-primary cursor-pointer"
                 fontSize={"1.7rem"}
                 onClick={() => setSidebarOpen(true)}
               />
             </div>
-
             {isSidebarOpen && (
               <div
                 className={`block md:hidden absolute w-72 h-screen bg-white shadow-lg z-10 top-0 left-0 py-6 px-4`}
@@ -63,7 +61,7 @@ const Header = ({ userLoggedIn }) => {
                         <AiOutlineHeart
                           fontSize={"1.9rem"}
                           className="bg-slate-200 p-2 rounded-lg"
-                        />{" "}
+                        />
                         <IoMdContact fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />
                         <BsCart2
                           fontSize={"1.9rem"}
@@ -71,8 +69,7 @@ const Header = ({ userLoggedIn }) => {
                         />
                       </div>
                       <div className="w-full bg-primary h-1 my-7"></div>
-
-                      <div className=" bg-slate-200 flex rounded-lg p-1 md:space-x-2 block ">
+                      <div className=" bg-slate-200 flex rounded-lg p-1 md:space-x-2 ">
                         <AiOutlineSearch className="text-white" />
                         <input
                           className="bg-slate-200 text-slate-800 focus:outline-none"
@@ -99,7 +96,6 @@ const Header = ({ userLoggedIn }) => {
                     <li className="cursor-pointer">Feedback</li>
                   </ul>
                 </div>
-
                 <div className="flex bg-slate-200 rounded-lg px-1 py-1 space-x-2 ">
                   <AiOutlineSearch className="text-slate-500 text-2xl" />
                   <input
@@ -108,7 +104,6 @@ const Header = ({ userLoggedIn }) => {
                     placeholder="Search"
                   />
                 </div>
-
                 <div className="flex space-x-4">
                   <AiOutlineHeart fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />{" "}
                   <IoMdContact fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />

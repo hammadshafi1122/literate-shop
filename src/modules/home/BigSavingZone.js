@@ -57,14 +57,14 @@ const BigSavingZone = () => {
   return (
     <>
       <div className="flex items-center h-full space-x-3">
-        <div className="h-6 w-1 bg-purple-600 rounded-full"></div>
+        <div className="h-6 w-1 bg-primary rounded-full"></div>
         <h1 className="font-bold text-3xl">Big Saving Zone</h1>
       </div>
       <div className="space-y-4">
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-8 md:space-y-0">
           {savingZone.map((item) => (
             <div
-              className="relative px-6 md:px-8 py-6 md:py-16 space-y-3 md:space-y-8 w-full h-[280px] md:h-[356.2px] rounded-xl text-black"
+              className="relative px-6 md:px-8 py-6 md:py-16 space-y-3 md:space-y-8 w-full h-[280px] md:h-[393px] rounded-xl text-black"
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
                 backgroundRepeat: "no-repeat",
@@ -102,7 +102,7 @@ const BigSavingZone = () => {
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-8 md:space-y-0">
           {savingZone2.map((item) => (
             <div
-              className="relative bg-down px-6 md:px-8 py-6 md:py-16 space-y-3 md:space-y-8 w-full h-[285px] md:h-[356.2px] rounded-xl text-black"
+              className="relative bg-down px-6 md:px-8 py-6 md:py-16 space-y-3 md:space-y-8 w-full h-[285px] md:h-[393px] rounded-xl text-black"
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
                 backgroundRepeat: "no-repeat",
@@ -110,7 +110,7 @@ const BigSavingZone = () => {
                 backgroundPosition: "top",
               }}
             >
-              <div className="absolute top-5  right-10 space-y-2 ">
+              <div className="absolute top-5 right-10 space-y-2">
                 <div className="space-y-3">
                   <h6 className="font-bold text-2xl md:text-4xl w-[180px] md:w-[200px]">
                     {item.title}

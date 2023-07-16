@@ -40,7 +40,7 @@ const Footer = () => {
               <li>Sitemap</li>
             </div>
           </ul>
-          <ul className="space-y-6 w-[10rem]">
+          <ul className="space-y-6">
             <li className="text-bold text-2xl">Location</li>
             <div className="space-y-3">
               <li>support@gmail.com</li>
@@ -64,22 +64,22 @@ const Footer = () => {
           </div>
           <div className="space-y-5">
             <h1 className="text-bold text-3xl">Download The App </h1>
-            <div className="flex space-x-5">
-              <div className="flex space-x-2">
+            <div className="flex space-x-10">
+              <div className="flex space-x-4">
                 <div>
-                  <img src={Vector} alt="" />
+                  <img src={Vector} className="h-12" alt="" />
                 </div>
-                <div className="space-y-3">
-                  <h5>The google backup</h5>
+                <div className="space-y-1">
+                  <h5>The Google Backup</h5>
                   <h3>Google Play</h3>
                 </div>
               </div>
-              <div className="flex space-x-2">
+              <div className="flex space-x-4">
                 <div>
-                  <img src={Vector1} alt="" />
+                  <img src={Vector1} className="h-12" alt="" />
                 </div>
-                <div className="space-y-3">
-                  <h5>Flex cross</h5>
+                <div className="space-y-1">
+                  <h5>Avialable on the</h5>
                   <h3>App Store</h3>
                 </div>
               </div>
@@ -87,9 +87,6 @@ const Footer = () => {
           </div>
         </div>
         <div className="space-y-3">
-          <hr />
-          <h1 className="text-bold text-2xl">Popular Catogories</h1>
-          <hr />
           <p className="flex justify-center">
             Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
           </p>
