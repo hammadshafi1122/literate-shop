@@ -21,18 +21,22 @@ const Header = ({ userLoggedIn }) => {
       <div>
         {userLoggedIn ? (
           <div className="">
-            <AiOutlineMenu
-              className="block md:hidden text-primary cursor-pointer"
-              fontSize={"1.7rem"}
-              onClick={() => setSidebarOpen(true)}
-            />
+            <div className="flex justify-between">
+              <img alt="my_image" src={Logo} className="h-10 md:hidden" />
+
+              <AiOutlineMenu
+                className="block md:hidden text-primary cursor-pointer"
+                fontSize={"1.7rem"}
+                onClick={() => setSidebarOpen(true)}
+              />
+            </div>
 
             {isSidebarOpen && (
               <div
                 className={`block md:hidden absolute w-72 h-screen bg-white shadow-lg z-10 top-0 left-0 py-6 px-4`}
                 ref={sidebarRef}
               >
-                <div className="h-full flex flex-col space-y-10">
+                <div className="h-full flex flex-col space-y-6">
                   <div className="flex justify-between items-center ">
                     <img alt="my_image" src={Logo} className="h-10" />
                     <RxCross2
@@ -41,39 +45,48 @@ const Header = ({ userLoggedIn }) => {
                       onClick={() => setSidebarOpen(false)}
                     />
                   </div>
-                  <div className="space-y-16">
+                  <div className="space-y-13">
                     <div className="">
-                      <ul className=" text-lg space-y-8 ">
-                        <li className="border-b-2 border-black cursor-pointer ">Home</li>
-                        <li className="border-b-2 border-black cursor-pointer ">Men</li>
-                        <li className="border-b-2 border-black cursor-pointer ">Women</li>
-                        <li className="border-b-2 border-black cursor-pointer ">Joggers</li>
-                        <li className="border-b-2 border-black cursor-pointer ">Feedback</li>
-                      </ul>
+                      <div className="">
+                        <ul className="text-lg space-y-5">
+                          <li className=" border-black cursor-pointer ">Home</li>
+                          <li className=" border-black cursor-pointer ">Men</li>
+                          <li className=" border-black cursor-pointer ">Women</li>
+                          <li className=" border-black cursor-pointer ">Joggers</li>
+                          <li className=" border-black cursor-pointer ">Feedback</li>
+                        </ul>
+                      </div>
+                      <div className="w-full bg-primary h-1 my-7"></div>
                     </div>
+                    <div className="space-y-10">
+                      <div className="space-y-3 ">
+                        <AiOutlineHeart
+                          fontSize={"1.9rem"}
+                          className="bg-slate-200 p-2 rounded-lg"
+                        />{" "}
+                        <IoMdContact fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />
+                        <BsCart2
+                          fontSize={"1.9rem"}
+                          className="bg-slate-200 p-2 rounded-lgnpm start"
+                        />
+                      </div>
+                      <div className="w-full bg-primary h-1 my-7"></div>
 
-                    <div className="flex space-x-20">
-                      <AiOutlineHeart fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />{" "}
-                      <IoMdContact fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />
-                      <BsCart2
-                        fontSize={"1.9rem"}
-                        className="bg-slate-200 p-2 rounded-lgnpm start"
-                      />
-                    </div>
-                    <div className="flex bg-slate-200 rounded-lg px-1 py-1 space-x-2 block">
-                      <AiOutlineSearch fontSize={"1.5rem"} />
-                      <input
-                        className="bg-slate-200 text-slate-800"
-                        type="Search"
-                        placeholder="Search"
-                      />
+                      <div className=" bg-slate-200 flex rounded-lg p-1 md:space-x-2 block ">
+                        <AiOutlineSearch className="text-white" />
+                        <input
+                          className="bg-slate-200 text-slate-800 focus:outline-none"
+                          type="Search"
+                          placeholder="Search"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             )}
             <div>
-              <div className=" md:justify-around items-center hidden md:flex md:block">
+              <div className=" md:justify-around items-center hidden md:flex">
                 <div>
                   <img alt="my_image" src={Logo} className="h-10" />
                 </div>
@@ -87,15 +100,16 @@ const Header = ({ userLoggedIn }) => {
                   </ul>
                 </div>
 
-                <div className="flex bg-slate-200 rounded-lg px-1 py-1 space-x-2">
-                  <AiOutlineSearch fontSize={"1.5rem"} />
+                <div className="flex bg-slate-200 rounded-lg px-1 py-1 space-x-2 ">
+                  <AiOutlineSearch className="text-slate-500 text-2xl" />
                   <input
-                    className="bg-slate-200 text-slate-800"
+                    className="bg-slate-200 text-slate-800 focus:outline-none"
                     type="Search"
                     placeholder="Search"
                   />
                 </div>
-                <div className="flex space-x-4 ">
+
+                <div className="flex space-x-4">
                   <AiOutlineHeart fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />{" "}
                   <IoMdContact fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lg" />
                   <BsCart2 fontSize={"1.9rem"} className="bg-slate-200 p-2 rounded-lgnpm start" />

@@ -26,6 +26,11 @@ import ShopNowLeftSide from "./shop_now_left_side.png";
 import ShopNowRightSide from "./shop_now_right_side.png";
 import Vector from "./Group.png";
 import Vector1 from "./Group (1).png";
+import bigSave1 from "./bigsave1.png";
+import bigSave2 from "./bigsave2.png";
+import bigSave3 from "./bigsave3.png";
+import bigSave4 from "./bigsave4.png";
+import bigSave5 from "./bigsave5.png";
 export {
   Logo,
   SigninBanner,
@@ -54,4 +59,9 @@ export {
   ShopNowRightSide,
   Vector,
   Vector1,
+  bigSave1,
+  bigSave2,
+  bigSave3,
+  bigSave4,
+  bigSave5,
 };
