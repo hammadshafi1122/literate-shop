@@ -8,7 +8,7 @@ import { Vector1 } from "assets/images";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#3C4242] px-6 py-10 md:px-36 text-white">
+    <footer className="w-full bg-[#3C4242] px-6 py-10 md:px-10 lg:px-36  text-white">
       <div className="space-y-8">
         <div className="md:flex justify-between">
           <ul className="space-y-6">
@@ -40,7 +40,7 @@ const Footer = () => {
               <li>Sitemap</li>
             </div>
           </ul>
-          <ul className="space-y-6">
+          <ul className="space-y-6 w-[10rem]">
             <li className="text-bold text-2xl">Location</li>
             <div className="space-y-3">
               <li>support@gmail.com</li>
